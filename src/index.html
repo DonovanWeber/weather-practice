@@ -1,0 +1,30 @@
+<html lang="en-Us">
+<head>
+  <title>Weather</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Get Weather Conditions From Anywhere!</h1>
+    <label for="location">Enter a city</label>
+    <input id="location" type="text">
+    <button class="btn-success" id="weatherLocation">Get
+      Current Temperature and Humidity</button>
+    <label for="zipCode">Enter a zipCode</label>
+    <input id="zipCode" type="text">
+    <label for="countries">Choose your country:</label>
+    <select name="countries" id="countries">
+      <option value="US">United States</option>
+      <option value="MX">Mexico</option>
+      <option value="CA">Canada</option>
+    </select>
+    <button class="btn-success" id="weatherZipCode">Get
+      Current Temperature and Humidity</button>
+      <div class="showErrors"></div>
+      <div class="showHumidity"></div>
+      <div class="showTemp"></div>
+      <div class="showWindSpeed"></div>
+      <div class="showSkies"></div>
+      <div class="showVisibilty"></div>
+  </div>
+</body>
+</html>
