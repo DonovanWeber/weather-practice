@@ -37,7 +37,7 @@ $(document).ready(function() {
     const countryCode = $('select#countries option:selected').val();
     // var value = $('select#dropDownId option:selected').val();
     let request = new XMLHttpRequest();
-    const url = `https://api.openweathermap.org/data/2.5/weather?zip=${zip Code},${countryCode}&appid=${process.env.API_KEY}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode},${countryCode}&appid=${process.env.API_KEY}`;
 
     request.onreadystatechange = function () {
       if (this.readyState === 4 && this.status === 200) {
@@ -58,5 +58,3 @@ $(document).ready(function() {
     }
   });
 });
-
-// https://api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}&appid={API key}
